@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellphone Price Prediction</title>
+</head>
+
+
+<body style="background: url(../static/images2.jfif);
+ background-repeat: no-repeat;
+background-color: yellow;
+background-size: cover;
+max-width: 700px;
+  margin: auto;">
+
+    <h1> Cellphone Price Prediction </h1>
+    <form method="get" action="/predict_price">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3 style="color:rgb(153, 47, 126);">Get Cellphone Price in single click</h3>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <label for="Sale" style="color:rgb(247, 18, 106);">Saling Quantity per day</label><br>
+            <input type="text" placeholder="Saling Quantity per day" name="Sale" required>
+            <br><br>
+            <label for="Weight of the Cellphone in grams" style="color:rgb(247, 18, 106);">Enter Weight of the Cellphone in grams</label><br>
+            <input type="text" placeholder="Enter Weight of the Cellphone in grams" name="weight" required>
+            <br><br>
+            <label for="screen resolution 1 to 20" style="color:rgb(247, 18, 106);">Enter the screen resolution from 1 to 20</label><br>
+            <input type="text" placeholder="Enter the screen resolution from 1 to 20" name="resoloution" required>
+            <br><br>
+            <label for="Pixels per inch" style="color:rgb(247, 18, 106);">Enter Pixels per inch</label><br>
+            <input type="text" placeholder="Enter Pixels per inch" name="ppi" required>
+            <br><br>
+            <label for="CPU Core" style="color:rgb(247, 18, 106);">Enter CPU core</label><br>
+            <input type="text" placeholder="Enter CPU core" name="cpu_core" required>
+            <br><br>
+            <label for="CPU Frequency" style="color:rgb(247, 18, 106);">Enter CPU Frequency</label><br>
+            <input type="text" placeholder="Enter CPU Frequency" name="cpu_freq" required>
+            <br><br>
+            <label for="Internal Memory" style="color:rgb(247, 18, 106);">Enter Internal Memory</label><br>
+            <input type="text" placeholder="Enter Internal Memory" name="internal_mem" required>
+            <br><br>
+            <label for="RAM" style="color:rgb(247, 18, 106);">Enter RAM</label><br>
+            <input type="text" placeholder="Enter RAM" name="ram" required>
+            <br><br>
+            <label for="Rear Camera Pixels" style="color:rgb(247, 18, 106);">Enter Rear Camera Pixels</label><br>
+            <input type="text" placeholder="Enter Rear Camera Pixels" name="RearCam" required>
+            <br><br>
+            <label for="Front Camera Pixels" style="color:rgb(247, 18, 106);">Enter Front Camera Pixels</label><br>
+            <input type="text" placeholder="Enter Front Camera Pixels" name="Front_Cam" required>
+            <br><br>
+            <label for="Bettery in mAh" style="color:rgb(247, 18, 106);">Enter Bettery in mAh</label><br>
+            <input type="text" placeholder="Enter Bettery in mAh" name="battery" required>
+            <br><br>
+            <label for="Thickness in mm" style="color:rgb(247, 18, 106);">Enter Thickness in mm</label><br>
+            <input type="text" placeholder="Enter Thickness in mm" name="thickness" required>
+            <br><br>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+            <br><br>
+            <h3 style="color:rgb(243, 10, 18);">Cellphone Price will be <b> {{ price }}  $</b> Only </h3>
+        </div>
+    </form>
+
+
+</body>
+</html>
